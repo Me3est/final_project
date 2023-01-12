@@ -1,6 +1,7 @@
 /* 본문 */
 .main {
     margin-top: 9px;
+    font-family: 'NanumBarunGothic';
 }
 .content_area {
     width: 100%;
@@ -65,7 +66,6 @@
     z-index: 999;
 }
 .indicator {
-    width: 300px;
     height: 50px;
     position: absolute;
     bottom: 0;
@@ -76,13 +76,14 @@
     gap: 42px;
 }
 .indi_bar {
-    width: 15px;
-    height: 15px;
-    transform: rotate(45deg);
-    background: rgb(179, 178, 178);
+    width: 20px;
+    height: 20px;
+    /* transform: rotate(45deg); */
+    border-radius: 50%;
+    background: rgb(255 255 255 / 90%);
 }
 .indi_active {
-    background: #555;
+    background: #dc778c;
 }
 /* 본문 */
 .oneplus_txt p {
@@ -109,7 +110,6 @@
 /* 4*4 */
 .one_four_item {
     width: 50%;
-    height: 700px;
 }
 .two_item_box {
     display: flex;
@@ -119,7 +119,6 @@
 }
 .one_item {
     width: 50%;
-    height: 100%;
 }
 .one_item img {
     width: 100%;
@@ -129,25 +128,45 @@
     margin: 0;
 }
 .title {
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 600;
+    font-family: 'NanumBarunGothic';
     color: #555;
 }
 .two_title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: #555;
     margin: 10px 0;
 }
-.two_s_price {display: inline-block;}
-#best > img {
-    width: 1150px;
-    height: 30px;
-    margin-top: 100px;
+.s_price {
+    display: inline-block;
+    color: #e93388;
+    font-size: 19px;
+    font-weight: bold;
 }
+.two_s_price {
+    display: inline-block;
+    color: #e93388;
+    font-size: 18px;
+    font-weight: bold;
+}
+.two_o_price {
+    color: #bbb;
+    font-size: 15px;
+    font-weight: bold
+}
+
 /* item */
 .sec {
     margin: 100px 0;
+    width: 100%;
+}
+#best > img {
+    width: 100%;
+    height: 30px;
+    margin-top: 100px;
+
 }
 .sec_body {
     display: flex;

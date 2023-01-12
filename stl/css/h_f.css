@@ -279,3 +279,44 @@
     padding-top: 20px;
     box-sizing: border-box;
 }
+/* 탑버튼 */
+.menu_btn {
+    width: 52px;
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+}
+.top_btn {
+    text-align: center;
+    line-height: 12px;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 11px;
+    margin-bottom:3px;
+}
+.cart {
+    text-align: center;
+    line-height: 12px;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 11px;
+    margin-bottom:3px;
+    cursor: pointer;
+}
+.seen_product {
+    text-align: center;
+    line-height: 12px;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 11px;
+    cursor: pointer;
+}
