@@ -174,9 +174,9 @@
                             <tr>
                                 <td class="tb_txt">수량</td>
                                 <td class="count_box">
-                                    <input type="text" value="0" id="count" readonly>
-                                    <img class="minus" src="../img/icon/down.jpg" alt="마이너스아이콘">
-                                    <img class="plus" src="../img/icon/up.jpg" alt="플러스아이콘">
+                                    <input type="text" value="1" id="qty_count">
+                                    <img id="minus" src="../img/icon/down.jpg" alt="마이너스아이콘">
+                                    <img id="plus" src="../img/icon/up.jpg" alt="플러스아이콘">
                                 </td>
                             </tr>
                         </table>
@@ -210,10 +210,10 @@
             <!-- 상품탭 -->
             <div class="product_part">
                 <div class="product_tab">
-                    <div class="p_tab">상품상세정보</div>
-                    <div class="p_tab">배송/교환/환불</div>
-                    <div class="p_tab">상품구매후기</div>
-                    <div class="p_tab">상품문의</div>
+                    <div class="p_tab"><a href="#detail_product">상품상세정보</a></div>
+                    <div class="p_tab"><a href="#delivery_tab">배송/교환/환불</a></div>
+                    <div class="p_tab"><a href="#product_review">상품구매후기</a></div>
+                    <div class="p_tab"><a href="#product_qna">상품문의</a></div>
                 </div>
             </div>
             <div class="event_img">
@@ -221,17 +221,17 @@
             </div>
             <!-- 상품상세이미지 -->
             <div class="product_area">
-                <div id="detail_product">
+                <div class="tb" id="detail_product" >
                     <div class="detail_img"></div>
                     <div class="detail_info">
-                        <img src="../img/icon/2017_bottom.jpg" alt="사이즈 정보">
+                        <img src="../img/icon/22yts_ny_over_dm_warm_hood_last_02.jpg" alt="사이즈 정보">
                     </div>
                 </div>
-                <div id="delivery_tab">
+                <div class="tb" id="delivery_tab">
                     <img src="../img/icon/2017_bottom.jpg" alt="배송정보">
                 </div>
                 <!-- 리뷰탭 -->
-                <div id="product_review">
+                <div class="tb" id="product_review">
                    <div class="review_typed">
                         <div class="r_title">POWER REVIEW</div>
                         <div class="r_box">
@@ -276,7 +276,7 @@
                    </div>
                 </div>
                 <!-- 리뷰 -->
-                <div id="product_qna">
+                <div class="tb" id="product_qna">
                     <div class="qna_title">
                         <div class="q_img"></div>
                         <div class="qna_cate">

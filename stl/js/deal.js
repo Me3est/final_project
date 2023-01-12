@@ -6,7 +6,48 @@ $(document).ready(function() {
 
     // 하트버튼
     // 수량증감
+    $('#minus').click(function() {
+        let qty_count = $('#qty_count').val();
+        console.log("111")
+        if(qty_count > 1) {
+            $('#qty_count').val(+qty_count - 1);
+        }
+        else {
+            alert("최소주문수량은 1개 입니다.")
+        }
+    })
+    $('#plus').click(function() {
+        let qty_count = $('#qty_count').val();
+        console.log("111")
+        $('#qty_count').val(+qty_count + 1)
+    })
     
+// 탭이벤트
+    $('.p_tab').eq(0).addClass('tab_active');
+    let tab_top = $('.tb').offset().top;
+    let h_hei = $('#header_fixed').height();
+    $(window).scroll(function() {
+        let s_top = $(window).scrollTop() + h_hei + 36;
+        
+            for(let i=0; i<4; i++) {
+                console.log(s_top, $('.tb').eq(i).offset().top)
+                if(s_top > $('.tb').eq(i+1).offset().top) {
+                $('.p_tab').removeClass('tab_active')
+                $('.p_tab').eq(i).addClass('tab_active');
+            }
+        }
+    })
+    // 스크롤 부드럽게 이동
+    let tab_hei = $('.p_tab').innerHeight();
+    $('.p_tab a').click(function() {
+        event.preventDefault();
+
+        let href = $(this).attr('href');
+        let pos = $(href).offset().top;
+        $('html, body').animate({
+            scrollTop : pos - (tab_hei  + 70)
+        }, 1000)
+    })
 })
 // 데이터 집어넣기
 let rs = "";

@@ -80,7 +80,7 @@
     font-size: 13px;
 }
 .count_box {position: relative;}
-#count {
+#qty_count {
     width: 78px;
     height: 23px;
     border: 1px solid #ddd;
@@ -89,12 +89,12 @@
     top: 25%;
     left: 0;
 } 
-.minus {
+#minus {
     position: absolute;
     top: 26%;
     left: 37%;
 }
-.plus {
+#plus {
     position: absolute;
     top: 26%;
     left: 50%;
@@ -125,6 +125,10 @@
 }
 .p_tab:nth-child(1) {
     border-left: 1px solid #d7d7d7;
+}
+.tab_active {
+    color: #000;
+    background-color: #dfdfdf;
 }
 .event_img,
 .product_area  {
