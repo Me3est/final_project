@@ -1,0 +1,117 @@
+#wrap {
+    width: 100%;
+}
+.login_box {
+    width: 100%;
+    max-width: 600px;
+    margin: 45px auto;
+}
+.back_btn {
+    width: 90px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 28px;
+    text-align: center;
+    color: #222;
+    cursor: pointer;
+    border: 1px solid #efefef;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+.back_btn > img {
+        height: 11px;
+        margin-top: 5px;
+        display: inline-block;
+}
+.login_logo {
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+}
+.login_logo > img {
+    display: block;
+    margin: 20px auto;
+    width: 154px;
+}
+.login_img {
+    width: 460px;
+    margin: 0 auto;
+}
+.login_img > img {
+    width: 100%;
+}
+.login_tab {
+    width: 100%;
+    max-width: 460px;
+    margin: 50px auto;
+    display:flex;
+    border-radius: 10px;
+}
+.login_tab p {margin: 0;}
+.member_login_tab {
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 500;
+    color: #222;
+    border: 1px solid #aaa;
+    border-radius: 5px 0 0 5px;
+    background-color: #fff;
+}
+.not_member_login {
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 500;
+    color: #888;
+    border: 1px solid #efefef;
+    border-radius: 0 5px 5px 0;
+    font-weight: 300;
+    background-color: #fff;
+}
+.login_active {
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 500;
+    color: #222;
+    border: 1px solid #aaa;
+    background-color: #fff;
+}
+.member_login_pan {
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto;
+}
+input {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    color: #000;
+}
+input:nth-child(1) {
+    border-bottom: none;
+}
+.id_save {
+    margin: 15px 0;
+}
+.id_txt {
+    display: inline-block;
+    line-height: 10px;
+}
+.check_box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #eee;
+    margin-right: 5px;
+}

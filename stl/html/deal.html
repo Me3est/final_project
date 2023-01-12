@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스포츠 전문 브랜드 STL</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script defer src="../js/h_f.js"></script>
+    <script defer src="../js/ITEM_LIST.js"></script>
+    <script defer src="../js/common.js"></script>
+    <script defer src="../js/deal.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/h_f.css">
+    <link rel="stylesheet" href="../css/deal.css">
+</head>
+<body>
+    <!-- 검색창 -->
+    <div id="layer">
+        <input class="search_input" type="text" placeholder="검색">
+        <div class="s_img"></div>
+        <div id="x_box">x</div>
+    </div>
+    <!-- 탑 헤더 -->
+    <div class="top_header">
+        <div class="t_head_txt">
+            <p>새해응원이벤트! 새해 복 많이 받으세요</p>
+        </div>
+    </div>
+    <!-- 메인 헤더 -->
+    <div class="header">
+        <div class="h_content_area">
+            <a href="main.html"><div class="logo"></div></a>
+            <div class="h_cate">
+                <div class="cate_box"><a href="product.html?cate=0">베스트</a></div>
+                <div class="cate_box top_cate1"><a href="product.html?cate=1">상의</a>
+                    <ul class="cate_menu top_menu1">
+                        <li><a href="product.html?cate=1">전체</a></li>
+                        <li><a href="product.html?cate=1">반팔</a></li>
+                        <li><a href="product.html?cate=1">긴팔</a></li>
+                        <li><a href="product.html?cate=1">나시</a></li>
+                        <li><a href="product.html?cate=1">아우터</a></li>
+                        <li><a href="product.html?cate=1">브라탑</a></li>
+                    </ul>
+                </div>
+                <div class="cate_box bot_cate1"><a href="product.html?cate=2">하의</a>
+                    <ul class="cate_menu bot_menu1">
+                        <li><a href="product.html?cate=2">전체</a></li>
+                        <li><a href="product.html?cate=2">팬츠</a></li>
+                        <li><a href="product.html?cate=2">레깅스</a></li>
+                        <li><a href="product.html?cate=2">조거</a></li>
+                        <li><a href="product.html?cate=2">기모</a></li>
+                        <li><a href="product.html?cate=2">반바지</a></li>
+                        <li><a href="product.html?cate=2">이너웨어</a></li>
+                    </ul>
+                </div>
+                <div class="cate_box"><a href="product.html?cate=3">신상품</a></div>
+            </div>
+            <div class="h_menu">
+                <div class="h_personal1">
+                        <ul class="p_cate1">
+                            <li><a href="login.html">로그인</a></li>
+                            <li><a href="register.html">회원가입</a></li>
+                            <li><a href="login.html">장바구니</a></li>
+                            <li><a href="login.html">마이페이지</a></li>
+                        </ul>
+                </div>
+                <div id="h_search"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 스크롤 헤더 -->
+    <div id="header_fixed">
+        <div class="h_content_area">
+            <a href="#"><div class="logo"></div></a>
+            <div class="h_cate">
+                <div class="cate_box2"><a href="product.html?cate=0">베스트</a></div>
+                <div class="cate_box2 top_cate2"><a href="product.html?cate=1">상의</a>
+                    <ul class="cate_menu top_menu2">
+                        <li><a href="product.html?cate=1">전체</a></li>
+                        <li><a href="product.html?cate=1">반팔</a></li>
+                        <li><a href="product.html?cate=1">긴팔</a></li>
+                        <li><a href="product.html?cate=1">나시</a></li>
+                        <li><a href="product.html?cate=1">아우터</a></li>
+                        <li><a href="product.html?cate=1">브라탑</a></li>
+                    </ul>
+                </div>
+                <div class="cate_box2 bot_cate2"><a href="product.html?cate=2">하의</a>
+                    <ul class="cate_menu bot_menu2">
+                        <li><a href="product.html?cate=2">전체</a></li>
+                        <li><a href="product.html?cate=2">팬츠</a></li>
+                        <li><a href="product.html?cate=2">레깅스</a></li>
+                        <li><a href="product.html?cate=2">조거</a></li>
+                        <li><a href="product.html?cate=2">기모</a></li>
+                        <li><a href="product.html?cate=2">반바지</a></li>
+                        <li><a href="product.html?cate=2">이너웨어</a></li>
+                    </ul>
+                </div>
+                <div class="cate_box2"><a href="product.html?cate=3">신상품</a></div>
+            </div>
+            <div class="h_menu">
+                <div class="h_personal2">
+                        <ul class="p_cate2">
+                            <li><a href="login.html">로그인</a></li>
+                            <li><a href="register.html">회원가입</a></li>
+                            <li><a href="login.html">장바구니</a></li>
+                            <li><a href="login.html">마이페이지</a></li>
+                        </ul>
+                </div>
+                <div id="h_search"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 본문 -->
+    <div class="main">
+        <div class="content_area">
+            <div class="select_item_box">
+                <div class="main_item_img">
+                    <img src="../img/item/best/1.gif" alt="">
+                </div>
+                <div class="main_item_box">
+                    <div class="main_item_info">
+                        <div class="item_txt">
+                            <div class="item_title">
+                                <p class="i_title">[SET] NY 스윗 웜 후리스 맨투맨
+                                    <br>& NY 스윗 웜 후리스 조거팬츠 세트</p>
+                                <div class="icon">
+                                    <a href="#"><img src="../img/icon/icon_share.png" alt="공유아이콘"></a>
+                                    <a href="#"><img src="../img/icon/icon_wish.png" alt="찜아이콘"></a>
+                                </div>
+                            </div>
+                            <p class="desc">따뜻하고 가벼운 양털! YKK지퍼</p>
+                        </div>
+                        <div class="item_opt_box">
+                            <span class="i_opt"></span><span class="i_opt"></span><span class="i_opt"></span>
+                        </div>
+                        <table class="tb">
+                            <tr>
+                                <td class="tb_txt">소비자가</td>
+                                <td class="o_price"><del>146,000원</del></td>
+                            </tr>
+                            <tr>
+                                <td class="tb_txt">판매가격</td>
+                                <td class="s_price">19,930원</td>
+                            </tr>
+                            <tr>
+                                <td class="tb_txt">배송비</td>
+                                <td class="dv_price">2,500원(5만원 이상 구매시 무료배송)</td>
+                            </tr>
+                            <tr>
+                                <td class="tb_txt">선택1</td>
+                                <td>
+                                    <select name="1" id="select">
+                                        <option value="1">블랙WS~WM</option>
+                                        <option value="2">블랙WM~WL</option>
+                                        <option value="3">데이지WS~WM</option>
+                                        <option value="4">데이지WM~WL</option>
+                                        <option value="5">레드와인WS~WM</option>
+                                        <option value="6">레드와인WM~WL</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tb_txt">선택2</td>
+                                <td>
+                                    <select name="1" id="select">
+                                        <option value="1">블랙WS~WM</option>
+                                        <option value="2">블랙WM~WL</option>
+                                        <option value="3">데이지WS~WM</option>
+                                        <option value="4">데이지WM~WL</option>
+                                        <option value="5">레드와인WS~WM</option>
+                                        <option value="6">레드와인WM~WL</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tb_txt">수량</td>
+                                <td class="count_box">
+                                    <input type="text" value="0" id="count">
+                                    <img class="minus" src="../img/icon/down.jpg" alt="마이너스아이콘">
+                                    <img class="plus" src="../img/icon/up.jpg" alt="플러스아이콘">
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="pay_box">
+                            <a href="#"><img src="../img/icon/buy.jpg" alt="구매버튼"></a>
+                            <a href="#"><img src="../img/icon/cart.jpg" alt="장바구니아이콘"></a>
+                            <a href="#"><img src="../img/icon/wish.jpg" alt="위시리스트"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 상품추천슬라이드 -->
+            <div class="item_best_slide">
+                <div class="s_txt">
+                    <p>해당 상품과 같이 구매하면 좋은 상품들</p>
+                </div>
+                <div class="mini_slide">
+                    <div class="m_slide">
+                        <div class="m_banner">
+
+                        </div>
+                        <div class="m_banner"></div>
+                        <div class="m_banner"></div>
+                        <div class="m_banner"></div>
+                    </div>
+                    <div class="m_slide"></div>
+                    <div class="m_slide"></div>
+                    <div class="m_slide"></div>
+                </div>
+            </div>
+            <!-- 상품탭 -->
+            <div class="product_part">
+                <div class="product_tab">
+                    <div class="p_tab">상품상세정보</div>
+                    <div class="p_tab">배송/교환/환불</div>
+                    <div class="p_tab">상품구매후기</div>
+                    <div class="p_tab">상품문의</div>
+                </div>
+            </div>
+            <div class="event_img">
+                <img src="../img/icon/08_join_us_info_03.jpg" alt="이벤트 정보">
+            </div>
+            <!-- 상품상세이미지 -->
+            <div class="product_area">
+                <div id="detail_product">
+                    <div class="detail_img"></div>
+                    <div class="detail_info">
+                        <img src="../img/icon/2017_bottom.jpg" alt="사이즈 정보">
+                    </div>
+                </div>
+                <div id="delivery_tab">
+                    <img src="../img/icon/2017_bottom.jpg" alt="배송정보">
+                </div>
+                <!-- 리뷰탭 -->
+                <div id="product_review">
+                   <div class="review_typed">
+                        <div class="r_title">POWER REVIEW</div>
+                        <div class="r_box">
+                            <textarea name="" id="review" cols="30" rows="10">
+
+※ 본 게시판은 상품후기 게시판입니다. 문의글은 Q&A로 해주세요.^^
+
+* 포토후기 - 적립금 500원
+* 글후기   -  적립금 100원
+                            </textarea>
+                        </div>
+                        <div class="r_star_box">
+                            <div class="photo_add">
+                                <img src="../img/icon/photo-camera.png" alt="사진추가">
+                                사진추가
+                            </div>
+                            <select name="star" id="star">
+                                <option value="1" class="star2">★★★★★</option>
+                                <option value="1" class="star2">★★★★</option>
+                                <option value="1" class="star2">★★★</option>
+                                <option value="1" class="star2">★★</option>
+                                <option value="1" class="star2">★</option>
+                            </select>
+                            <div class="review_add">
+                                <img src="../img/icon/clipboard.png" alt="리뷰등록">
+                                리뷰등록
+                            </div>
+                        </div>
+                   </div>
+                   <div class="review_board">
+                        <div class="r_txt">
+                            <div class="review_s_txt">프리미엄 상품평</div>
+                            <div class="review_cate">
+                                <div class="r_cate">최신순</div>
+                                <div class="r_cate">평점순</div>
+                                <div class="r_cate">추천순</div>
+                            </div>
+                        </div>
+                        <div class="review_save">
+
+                        </div>
+                   </div>
+                </div>
+                <!-- 리뷰 -->
+                <div id="product_qna">
+                    <div class="qna_title">
+                        <div class="q_img"></div>
+                        <div class="qna_cate">
+                            <div class="q_cate">
+                                <a href="#"><img src="../img/icon/write_list_btn.gif" alt="목록버튼"></a>
+                            </div>
+                            <div class="q_cate">
+                                <a href="#"><img src="../img/icon/ok_btn.gif" alt="등록버튼"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qna_list_box">
+                        <div class="qna_top_txt">
+                            <div class="qna_txt">번호</div>
+                            <div class="qna_txt">제목</div>
+                            <div class="qna_txt">작성자</div>
+                            <div class="qna_txt">작성일</div>
+                            <div class="qna_txt">조회</div>
+                        </div>
+                        <div class="qna_save"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <div class="footer">
+        <ul class="top_footer">
+            <li><a href="http://www.beststl.com/html/join_terms.html">이용약관</a></li>
+            <li><a href="http://www.beststl.com/html/privacy.html">개인정보 처리방침</a></li>
+            <li><a href="https://ftc.go.kr/www/bizCommList.do?key=232">공정위 표준약관</a></li>
+            <li><a href="http://www.beststl.com/shop/faq.html">FAQ</a></li>
+            <li><a href="https://www.beststl.com/board/board.html?code=stlsnow7_board1">Q&A</a></li>
+            <li><a href="http://www.beststl.com/shop/page.html?id=142">ABOUT US</a></li>
+            <li>제품후기</li>
+        </ul>
+        <div class="mid_footer">
+            <a href="#"><img src="../img/main/foot5_html_20180309_1dep.jpg" alt="" usemap="#Map"></a>
+            <map name="Map">
+                <area shape="" coords="" href="" alt="">
+            </map>
+        </div>
+        <div class="bot_footer">
+            <div class="foot_txt">
+                <p>
+                    상호(법인명) : ㈜케이마켓    
+                    사업자 등록번호 : 106-86-30733    
+                    주소 : 서울시 용산구 보광로 34 4층 STL    
+                 </p>
+                <p>
+                    E-MAIL : up5560@hanmail.net
+                    통신판매업 신고 용산 제 03181호    
+                    개인정보관리 책임자  : 강화선    
+                    대표자(성명) : 강화선    
+                    TEL : 1644-6866    
+                  </p>
+                <p>
+                    Hosting by 메이크샵</p>
+                <p>
+                    Copyright ⓒ 2018 STL All Right Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+       
+    </script>
+</body>
+</html>

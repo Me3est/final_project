@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스포츠 전문 브랜드 STL</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script defer src="../js/h_f.js"></script>
+    <script defer src="../js/ITEM_LIST.js"></script>
+    <script defer src="../js/common.js"></script>
+    <script defer src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/h_f.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- 검색창 -->
+    <div id="layer">
+        <input class="search_input" type="text" placeholder="검색">
+        <div class="s_img"></div>
+        <div id="x_box">x</div>
+    </div>
+    <!-- 탑 헤더 -->
+    <div class="top_header">
+        <div class="t_head_txt">
+            <p>새해응원이벤트! 새해 복 많이 받으세요</p>
+        </div>
+    </div>
+    <!-- 메인 헤더 -->
+    <div class="header">
+        <div class="h_content_area">
+            <a href="main.html"><div class="logo"></div></a>
+            <div class="h_cate">
+                <div class="cate_box"><a href="product.html?cate=0">베스트</a></div>
+                <div class="cate_box top_cate1"><a href="product.html?cate=1">상의</a>
+                    <ul class="cate_menu top_menu1">
+                        <li><a href="product.html?cate=1">전체</a></li>
+                        <li><a href="product.html?cate=1">반팔</a></li>
+                        <li><a href="product.html?cate=1">긴팔</a></li>
+                        <li><a href="product.html?cate=1">나시</a></li>
+                        <li><a href="product.html?cate=1">아우터</a></li>
+                        <li><a href="product.html?cate=1">브라탑</a></li>
+                    </ul>
+                </div>
+                <div class="cate_box bot_cate1"><a href="product.html?cate=2">하의</a>
+                    <ul class="cate_menu bot_menu1">
+                        <li><a href="product.html?cate=2">전체</a></li>
+                        <li><a href="product.html?cate=2">팬츠</a></li>
+                        <li><a href="product.html?cate=2">레깅스</a></li>
+                        <li><a href="product.html?cate=2">조거</a></li>
+                        <li><a href="product.html?cate=2">기모</a></li>
+                        <li><a href="product.html?cate=2">반바지</a></li>
+                        <li><a href="product.html?cate=2">이너웨어</a></li>
+                    </ul>
+                </div>
+                <div class="cate_box"><a href="product.html?cate=3">신상품</a></div>
+            </div>
+            <div class="h_menu">
+                <div class="h_personal1">
+                        <ul class="p_cate1">
+                            <li><a href="login.html">로그인</a></li>
+                            <li><a href="register.html">회원가입</a></li>
+                            <li><a href="login.html">장바구니</a></li>
+                            <li><a href="login.html">마이페이지</a></li>
+                        </ul>
+                </div>
+                <div id="h_search"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 스크롤 헤더 -->
+    <div id="header_fixed">
+        <div class="h_content_area">
+            <a href="#"><div class="logo"></div></a>
+            <div class="h_cate">
+                <div class="cate_box2"><a href="product.html?cate=0">베스트</a></div>
+                <div class="cate_box2 top_cate2"><a href="product.html?cate=1">상의</a>
+                    <ul class="cate_menu top_menu2">
+                        <li><a href="product.html?cate=1">전체</a></li>
+                        <li><a href="product.html?cate=1">반팔</a></li>
+                        <li><a href="product.html?cate=1">긴팔</a></li>
+                        <li><a href="product.html?cate=1">나시</a></li>
+                        <li><a href="product.html?cate=1">아우터</a></li>
+                        <li><a href="product.html?cate=1">브라탑</a></li>
+                    </ul>
+                </div>
+                <div class="cate_box2 bot_cate2"><a href="product.html?cate=2">하의</a>
+                    <ul class="cate_menu bot_menu2">
+                        <li><a href="product.html?cate=2">전체</a></li>
+                        <li><a href="product.html?cate=2">팬츠</a></li>
+                        <li><a href="product.html?cate=2">레깅스</a></li>
+                        <li><a href="product.html?cate=2">조거</a></li>
+                        <li><a href="product.html?cate=2">기모</a></li>
+                        <li><a href="product.html?cate=2">반바지</a></li>
+                        <li><a href="product.html?cate=2">이너웨어</a></li>
+                    </ul>
+                </div>
+                <div class="cate_box2"><a href="product.html?cate=3">신상품</a></div>
+            </div>
+            <div class="h_menu">
+                <div class="h_personal2">
+                        <ul class="p_cate2">
+                            <li><a href="login.html">로그인</a></li>
+                            <li><a href="register.html">회원가입</a></li>
+                            <li><a href="login.html">장바구니</a></li>
+                            <li><a href="login.html">마이페이지</a></li>
+                        </ul>
+                </div>
+                <div id="h_search"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 본문 -->
+    <div class="main">
+        <div class="toolbar"></div>
+        <div class="main_banner">
+            <div class="btn_slider" id="l_btn"></div>
+            <div class="btn_slider" id="r_btn"></div>
+            <div class="banner banner1"></div>
+            <div class="banner banner2"></div>
+            <div class="banner banner3"></div>
+            <div class="banner banner4"></div>
+            <div class="banner banner5"></div>
+            <div class="banner banner6"></div>
+            <div class="indicator"></div>
+        </div>
+        <div class="content_area">
+            <div class="oneplus">
+                <div class="oneplus_txt">
+                    <p>1+1 EVENT</p>
+                </div>
+                <div class="one_item_box">
+                    <div class="one_main_item">
+                        <img src="../img/main/1+1/1.gif" alt="">
+                        <div class="one_txt">
+                            <p class="title">STL 메트로 기본핏 기모 후드 & 세미 오버핏 기모 후드 1+1</p>
+                            <p class="s_price">19,900원</p>
+                            <span class="o_price"><del>146,000원</del></span>
+                        </div>
+                    </div>
+                    <div class="one_four_item">
+                        <div class="two_item_box">
+                            <div class="one_item">
+                                <img src="../img/main/1+1/6.gif" alt="">
+                                <p class="two_title">STL 게임 숏 팬츠 1+1</p>
+                                    <p class="two_s_price">29,930원</p>
+                                    <span class="two_o_price"><del>78,000원</del></span>
+                            </div>
+                            <div class="one_item">
+                                <img src="../img/main/1+1/3.gif" alt="">
+                                <p class="two_title">메트로 조거 기모
+                                    키작아도 괜찮 팬츠 1+1</p>
+                                    <p class="two_s_price">19,900원</p>
+                                    <span class="two_o_price"><del>146,000원</del></span>
+                            </div>
+                        </div>
+                        <div class="two_item_box">
+                            <div class="one_item">
+                                <img src="../img/main/1+1/4.gif" alt="">
+                                <p class="two_title">STL NY 힐 기모웜 키작아도 괜찮아 팬츠 1+1</p>
+                                <p class="two_s_price">19,900원</p>
+                                    <span class="two_o_price"><del>146,000원</del></span>
+                            </div>
+                            <div class="one_item">
+                                <img src="../img/main/1+1/5.gif" alt="">
+                                <p class="two_title">STL 밸런스 슬림 숏라인
+                                    & 브라탑 밸런스 슬림 야노시호1+1</p>
+                                    <p class="two_s_price">19,900원</p>
+                                    <span class="two_o_price"><del>146,000원</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <div class="footer">
+        <ul class="top_footer">
+            <li>이용약관</li>
+            <li>개인정보 처리방침</li>
+            <li>공정위 표준약관</li>
+            <li>FAQ</li>
+            <li>Q&A</li>
+            <li>ABOUT US</li>
+            <li>제품후기</li>
+        </ul>
+        <div class="mid_footer">
+            <a href="#"><img src="../img/main/foot5_html_20180309_1dep.jpg" alt="" usemap="#Map"></a>
+            <map name="Map">
+                <area shape="" coords="" href="" alt="">
+            </map>
+        </div>
+        <div class="bot_footer">
+            <div class="foot_txt">
+                <p>
+                    상호(법인명) : ㈜케이마켓    
+                    사업자 등록번호 : 106-86-30733    
+                    주소 : 서울시 용산구 보광로 34 4층 STL    
+                 </p>
+                <p>
+                    E-MAIL : up5560@hanmail.net
+                    통신판매업 신고 용산 제 03181호    
+                    개인정보관리 책임자  : 강화선    
+                    대표자(성명) : 강화선    
+                    TEL : 1644-6866    
+                  </p>
+                <p>
+                    Hosting by 메이크샵</p>
+                <p>
+                    Copyright ⓒ 2018 STL All Right Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
