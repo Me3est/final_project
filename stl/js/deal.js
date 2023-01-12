@@ -27,7 +27,7 @@ $(document).ready(function() {
     let tab_top = $('.tb').offset().top;
     let h_hei = $('#header_fixed').height();
     $(window).scroll(function() {
-        let s_top = $(window).scrollTop() + h_hei + 36;
+        let s_top = $(window).scrollTop() + h_hei + 100;
         
             for(let i=0; i<4; i++) {
                 console.log(s_top, $('.tb').eq(i).offset().top)
@@ -45,7 +45,7 @@ $(document).ready(function() {
         let href = $(this).attr('href');
         let pos = $(href).offset().top;
         $('html, body').animate({
-            scrollTop : pos - (tab_hei  + 70)
+            scrollTop : pos - (tab_hei  + 80)
         }, 1000)
     })
 })
@@ -61,6 +61,9 @@ function load_data(cate, item) {
     $('.desc').text(rs.desc)
     $('.o_price').text(Number(rs.o_price).toLocaleString('ko')+"원");
     $('.s_price').text(Number(rs.s_price).toLocaleString('ko')+"원");
+    $('.detail_img1 img').attr('src', rs.detail_src1)
+    $('.detail_img2 img').attr('src', rs.detail_src2)
+    $('.detail_img3 img').attr('src', rs.detail_src3)
 
     rs_opt_color = rs.opt_color.split(",");
 
