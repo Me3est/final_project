@@ -1,3 +1,8 @@
+@font-face {
+    font-family:'NanumBarunGothic';
+    src: url(../font/NanumBarunGothic.ttf);
+}
+body {font-family: 'NanumBarunGothic'}
 #wrap {
     width: 100%;
 }
@@ -54,6 +59,7 @@
     text-align: center;
     font-weight: 500;
     color: #222;
+    font-size: 13px;
     border: 1px solid #aaa;
     border-radius: 5px 0 0 5px;
     background-color: #fff;
@@ -65,10 +71,11 @@
     text-align: center;
     font-weight: 500;
     color: #888;
+    font-size: 13px;
     border: 1px solid #efefef;
     border-radius: 0 5px 5px 0;
     font-weight: 300;
-    background-color: #fff;
+    background-color: #fafafa;
 }
 .login_active {
     width: 50%;
@@ -114,4 +121,28 @@ input:nth-child(1) {
     border-radius: 50%;
     background-color: #eee;
     margin-right: 5px;
+}.check_box_active {
+    background: url(../img/icon/20210728014159627.png) no-repeat center / cover;
+}
+#login_chk {
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    background: #31363d;
+    font-size: 15px;
+}
+.id_pw_find {
+    display: flex;
+    justify-content: space-between;
+}
+.id_txt {
+    font-size: 12px;
+}
+.id_pw_find p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #222;
+}
+.not_member_login  {
+
 }
