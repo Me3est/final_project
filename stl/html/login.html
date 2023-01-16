@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script defer src="../js/login.js"></script>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/login.css">
@@ -12,10 +13,12 @@
 <body>
     <div id="wrap">
         <div class="login_box">
-            <div class="back_btn">
-                <img src="../img/icon/20200611023439767.png" alt="">
-                <span>뒤로가기</span>
-            </div>
+            <a href="main.html">
+                <div class="back_btn">
+                    <img src="../img/icon/20200611023439767.png" alt="">
+                    <span>뒤로가기</span>
+                </div>
+            </a>
             <div class="login_logo">
                 <img src="../img/icon/1640243910818.png" alt="">
             </div>
@@ -23,10 +26,10 @@
                 <img src="../img/icon/1640245116412.png" alt="">
             </div>
            <div class="login_tab">
-            <div class="member_login_tab">
+            <div id="member_login_tab">
                 <p>기존 회원이세요?</p>
             </div>
-            <div class="not_member_login">
+            <div id="not_member_login">
                 <p>비회원 배송조회</p>
             </div>
            </div>
@@ -42,7 +45,14 @@
                 </form>
                 <div class="id_pw_find">
                     <a href="#"><p>아이디/비밀번호 찾기</p></a>
-                    <a href="#"><p>가입하기</p></a>
+                    <a href="register.html"><p>가입하기</p></a>
+                </div>
+            </div>
+            <div class="not_member_login_pan">
+                <div class="input_box">
+                    <input type="text" id="order_name" placeholder="주문자명">
+                    <input type="text" id="order_number" placeholder="주문번호">
+                    <input type="submit" value="확인" id="order_chk" disabled>
                 </div>
             </div>
         </div>

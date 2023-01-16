@@ -9,24 +9,32 @@ body {font-family: 'NanumBarunGothic'}
 .login_box {
     width: 100%;
     max-width: 600px;
-    margin: 45px auto;
+    margin: 40px auto;
 }
 .back_btn {
     width: 90px;
     height: 30px;
     font-size: 13px;
-    line-height: 28px;
+    line-height: 30px;
     text-align: center;
     color: #222;
     cursor: pointer;
     border: 1px solid #efefef;
     border-radius: 30px;
     box-sizing: border-box;
+    position: relative;
 }
 .back_btn > img {
-        height: 11px;
+        height: 12px;
         margin-top: 5px;
         display: inline-block;
+        position: absolute;
+        top: 10%;
+        left: 11%;
+}
+.back_btn span {
+    display: inline-block;
+    margin-left: 10px;
 }
 .login_logo {
     width: 100%;
@@ -52,7 +60,7 @@ body {font-family: 'NanumBarunGothic'}
     border-radius: 10px;
 }
 .login_tab p {margin: 0;}
-.member_login_tab {
+#member_login_tab {
     width: 50%;
     height: 45px;
     line-height: 45px;
@@ -64,29 +72,8 @@ body {font-family: 'NanumBarunGothic'}
     border-radius: 5px 0 0 5px;
     background-color: #fff;
 }
-.not_member_login {
-    width: 50%;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    font-weight: 500;
-    color: #888;
-    font-size: 13px;
-    border: 1px solid #efefef;
-    border-radius: 0 5px 5px 0;
-    font-weight: 300;
-    background-color: #fafafa;
-}
-.login_active {
-    width: 50%;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    font-weight: 500;
-    color: #222;
-    border: 1px solid #aaa;
-    background-color: #fff;
-}
+
+
 .member_login_pan {
     width: 100%;
     max-width: 460px;
@@ -130,6 +117,7 @@ input:nth-child(1) {
     color: #fff;
     background: #31363d;
     font-size: 15px;
+    cursor: pointer;
 }
 .id_pw_find {
     display: flex;
@@ -145,4 +133,54 @@ input:nth-child(1) {
 }
 .not_member_login  {
 
+}
+/* 비회원 */
+#not_member_login {
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 500;
+    color: #888;
+    font-size: 13px;
+    border: 1px solid #efefef;
+    border-radius: 0 5px 5px 0;
+    font-weight: 300;
+    background-color: #fafafa;
+}
+.not_member_login_pan {
+    width: 100%;
+    max-width: 460px;
+    margin:0px auto;
+    background-color: #fff;
+    display: none;
+    border-bottom: 2px solid #222;
+    box-sizing: border-box;
+}
+.input_box {
+    width: 100%;
+    margin: 40px 0;
+}
+.input_box input {
+    width: 100%;
+}
+#order_chk {
+    margin: 30px 0;
+    cursor: pointer;
+    background: #31363d;
+    font-size: 13px;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+
+}
+.login_active {
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 500;
+    color: #222;
+    border: 1px solid #aaa;
+    background-color: #fff;
 }
