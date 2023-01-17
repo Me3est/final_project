@@ -36,3 +36,18 @@
 .search_active {
     color: black;
 }
+/* 반응형 */
+@media screen and (max-width:768px) {
+    
+}
+@media screen and (max-width:480px) {
+    
+}
+@media screen and (max-width:320px) {
+    .search_box {
+        font-size: 9px;
+    }
+    .item_box {
+        width: 100%;
+    }
+}

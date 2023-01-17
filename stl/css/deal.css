@@ -22,7 +22,7 @@
 }
 .item_title {
     display: flex;
-    gap: 90px;
+    justify-content: space-between;
 }
 .i_title {
     width: 320px;
@@ -109,7 +109,7 @@
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
-
+    flex-wrap: wrap;
 }
 .p_tab {
     width: calc(100% / 4);
@@ -136,6 +136,14 @@
     max-width: 1000px;
     margin: 40px auto;
 }
+.detail_info, 
+#delivery_tab {
+    width: 100%;
+}
+.detail_info img, 
+#delivery_tab img {
+    width: 100%;
+}
 .event_img > img {
     width: 100%;
 } 
@@ -145,6 +153,7 @@
 .detail_img img {
     width: 100%;
 }
+
 /* 리뷰 */
 #product_review {
     margin: 70px 0;
@@ -267,12 +276,13 @@
 }
 .qna_title {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .q_img {
     width: 263px;
     height: 30px;
-    background: url(../img/icon/s_txt_qna.gif) no-repeat center / cover;
+    background: url(../img/icon/s_txt_qna.gif) no-repeat center / contain;
 }
 .qna_cate {
     display: flex;
@@ -310,4 +320,159 @@
     height: 400px;
     border-bottom: 1px solid #848484;
     box-sizing: border-box;
+}
+/* 반응형 */
+@media screen and (max-width:1024px) {
+    .main_item_info {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .img_buy {
+        display: inline-block;
+        width: 225px;
+    }
+    .img_cart {width: 64px;}
+    .img_wish {
+        width: 61px;
+    }
+    .product_part {
+        padding: 0px 5px;
+        box-sizing: border-box;
+    }
+    .tb {
+        margin: 15px 0 10px;
+    }  
+    .i_title {
+        width: 250px;
+    }
+    .item_title {
+        gap: 65px;
+    }
+    .product_area {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width:768px) {
+    .main_item_img {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .main_item_box {
+        width: 100%;
+    }
+    .i_title {
+        width: 500px;
+    }
+    .item_txt {
+        margin: 20px 0;
+    }
+    .pay_box {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .img_buy {
+        width: 290px;
+    }
+    .img_cart {
+        width: 81px;
+    }
+    .img_wish {
+        width: 78px;
+    }
+    .item_title {
+        gap: 40px;
+    }
+    .dv_price {
+        font-size: 13px;
+    }
+    #minus {
+        left: 40%;
+    }
+    #plus {
+        left: 53%;
+    }
+}
+@media screen and (max-width:480px) {
+    .i_title {
+        width: 235px;
+        font-size: 19px;
+        font-weight: bold;
+    }
+    .p_tab {
+        font-size: 10px;
+    }
+    .review_s_txt {
+        width: 110px;
+    }
+    .review_add {
+        width: 65px;
+        font-size: 11px;
+    }
+    .photo_add {
+        width: 95px;
+        font-size: 12px;
+    }
+    .photo_add img {
+        display: none;
+    }
+    .review_add img {
+        display: none;
+    }
+    .qna_txt {
+        font-size: 12px;
+    }
+    .qna_txt:nth-child(1) {
+        width: 70px;
+    }
+    .qna_txt:nth-child(2) {
+        width: 200px;
+    }
+    .qna_txt:nth-child(3), .qna_txt:nth-child(4), .qna_txt:nth-child(5) {
+    width: 75px;
+    }
+    .qna_title {
+        justify-content: center;
+    }
+}
+@media screen and (max-width:320px) {
+    .r_star_box {
+        margin: 10px 0;
+        display: flex;
+        gap: 3px;
+    }
+    .photo_add {
+        width: 55px;
+        font-size: 10px;
+    }
+    .review_add {
+        width: 55px;
+        font-size: 11px;
+    }
+    #select {
+        width: 160px;
+    }
+    #qty_count {
+        width: 55px;
+    }
+    #plus {
+        left: 58%;
+    }
+    .i_title {
+        width: 165px;
+        font-size: 15px;
+    }
+    .img_buy {
+        width: 210px;
+    }
+    .img_wish {
+        width: 58px;
+    }
+    .img_cart {
+        width: 60px;
+    }
+    .p_tab {
+        width: calc(100% / 2);
+    }
 }
