@@ -101,6 +101,52 @@ let toolbar = $('.main').offset().top;
             else if(s_top < toolbar) {
                 $('#header_fixed').fadeOut(300)
             }
+            if(s_top > 0) {
+                $('.ham_menu1').fadeOut(100)
+            }
+            else if(s_top == 0) {
+                $('.ham_menu1').fadeIn(0)
+            }
     })
-
+// 햄버거버튼
+  $('.ham_box1').click(function() {
+        if(!$('.h_top1').hasClass('h_top_active')) {
+            $('.h_top1').addClass('h_top_active')
+            $('.ham_menu1').css({
+                transform:'translateX(0)'
+            })
+        }
+        else {
+            $('.h_top1').removeClass('h_top_active')  
+            $('.ham_menu1').css({
+                transform:'translateX(-100%)'
+            })
+        }
+        if(!$('.h_bot1').hasClass('h_bot_active')) {
+            $('.h_bot1').addClass('h_bot_active')
+        }
+        else {
+            $('.h_bot1').removeClass('h_bot_active')  
+        }
+  })
+  $('.ham_box2').click(function() {
+    if(!$('.h_top2').hasClass('h_top_active')) {
+        $('.h_top2').addClass('h_top_active')
+        $('.ham_menu2').css({
+            transform:'translateX(0)'
+        })
+    }
+    else {
+        $('.h_top2').removeClass('h_top_active')  
+        $('.ham_menu2').css({
+            transform:'translateX(-100%)'
+        })
+    }
+    if(!$('.h_bot2').hasClass('h_bot_active')) {
+        $('.h_bot2').addClass('h_bot_active')
+    }
+    else {
+        $('.h_bot2').removeClass('h_bot_active')  
+    }
+})
 })

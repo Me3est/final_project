@@ -27,10 +27,11 @@
 .sec {
     margin: 40px 0;
 }
-#best > img {
-    width: 1150px;
-    height: 30px;
-    margin-top: 0px;
+.sec > img {
+    display: none;
+}
+.sec_title {
+    margin: 0;
 }
 .search_active {
     color: black;

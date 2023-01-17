@@ -92,16 +92,21 @@ input {
     color: #000;
 }
 input:nth-child(1) {
-    border-bottom: none;
+    margin-bottom: 10px;
 }
 .id_save {
     margin: 15px 0;
+    position: relative;
 }
 .id_txt {
     display: inline-block;
     line-height: 10px;
+    margin-left: 35px;
 }
 .check_box {
+    position: absolute;
+    top: 1%;
+    left: 1%;
     display: inline-block;
     width: 20px;
     height: 20px;
