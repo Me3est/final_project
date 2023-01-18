@@ -64,6 +64,7 @@ function load_data(cate, item) {
     $('.detail_img1 img').attr('src', rs.detail_src1)
     $('.detail_img2 img').attr('src', rs.detail_src2)
     $('.detail_img3 img').attr('src', rs.detail_src3)
+    $('.total_price').text(Number(rs.s_price).toLocaleString('ko')+"원")
 
     rs_opt_color = rs.opt_color.split(",");
 

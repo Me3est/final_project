@@ -99,7 +99,7 @@
     justify-content: space-between;
 }
 .one_main_item {
-    width: 47%;
+    width: 50%;
     height: 100%;
 }
 .one_main_item img {
@@ -111,7 +111,7 @@
 
 /* 4*4 */
 .one_four_item {
-    width: 50%;
+    width: 47%;
 }
 .two_item_box {
     display: flex;
@@ -131,7 +131,6 @@
 .title {
     font-size: 19px;
     font-weight: 600;
-    line-height: 50px;
     font-family: 'NanumBarunGothic';
     color: #555;
 }
