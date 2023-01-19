@@ -1,8 +1,7 @@
 // 섹션 만들기
 function make_sec(sec_id) {
     let list = `<div class="sec" id="${sec_id}">
-                    <img src="../img/main/${sec_id}-bar.jpg" alt="">
-                    <div class="sec_title"></div>
+                    <div class="sec_title">${sec_id.toUpperCase()}</div>
                     <div class="sec_body"></div>
                 </div>`;
 

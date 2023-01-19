@@ -31,7 +31,8 @@
     display: none;
 }
 .sec_title {
-    margin: 0;
+    margin: 10px 0;
+    font-size: 28px;
 }
 .search_active {
     color: black;

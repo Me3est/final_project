@@ -106,7 +106,15 @@ let timer = 1000;
         }, 1000)
     })
     
-
+// 리뷰탭클릭
+let r_cate_length = $('.r_cate').length;
+$('.r_cate').eq(0).addClass('r_cate_active')
+for(let i=0; i<r_cate_length; i++) {
+    $('.r_cate').eq(i).click(function() {
+        $('.r_cate').removeClass('r_cate_active');
+        $('.r_cate').eq(i).addClass('r_cate_active');
+    })       
+}
     
 })
 // 데이터 집어넣기
