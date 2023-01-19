@@ -10,6 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 .main_item_img {
     width: 45%;
@@ -71,6 +72,12 @@
     color: #ff3636;
     font-weight: 700;
 }
+.total_price {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: right;
+    margin: 18px 56px 10px 0;
+}
 .dv_price {font-family: 15px;}
 #select {
     width: 220px;
@@ -98,6 +105,51 @@
     position: absolute;
     top: 26%;
     left: 50%;
+}
+/* 배너 */
+.main_banner {
+    max-width: 900px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.banner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border: 1px solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around
+}
+
+#l_btn {
+    width: 50px;
+    height: 130px;
+    background: url(../img/main/w_slide_prev.png) no-repeat center / cover;
+    position: absolute;
+    top: 5vw;
+    z-index: 999;
+}
+#r_btn {
+    width: 50px;
+    height: 130px;
+    background: url(../img/main/w_slide_next.png) no-repeat center / cover;
+    position: absolute;
+    top: 5vw;
+    right: 0;
+    z-index: 999;
+}
+.item_box {
+    width: 200px;
+    
+}
+.item_box img {
+    width: 100%;
 }
 /* 탭 */
 .product_part {
@@ -387,6 +439,9 @@
     .dv_price {
         font-size: 13px;
     }
+    .total_price {
+        text-align: left;
+    }
     #minus {
         left: 40%;
     }
@@ -435,6 +490,10 @@
     .qna_title {
         justify-content: center;
     }
+    .img_buy {
+        width: 350px;
+    }
+
 }
 @media screen and (max-width:320px) {
     .r_star_box {

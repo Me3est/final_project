@@ -1,5 +1,5 @@
 $(window).ready(function() {
-    let b_index = 0;
+let b_index = 0;
 let b_length = $('.banner').length;
 let timer = 1000;
 // 인디케이트
