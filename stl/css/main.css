@@ -50,21 +50,61 @@
     background: url(../img/main/main_banner6.jpg) no-repeat center / cover;
 }
 #l_btn {
-    width: 50px;
-    height: 130px;
-    background: url(../img/main/w_slide_prev.png) no-repeat center / cover;
+    width: 90px;
+    height: 100%;
+    /* background: url(../img/main/w_slide_prev.png) no-repeat center / cover; */
     position: absolute;
-    top: 20vw;
+    /* top: 20vw; */
+    left: 0;
+    z-index: 999;
+}
+#l_btn > img {
+    position: absolute;
+    left: 11px;
+    top: 34vh;
+    opacity: 0;
+}
+/* #l_btn > img:hover {
+    opacity: 1;
+} */
+#l_btn:hover {
+    background-color: rgba(219, 218, 218, 0.719);
+    transition: all 0.4s
+}
+#l_btn:hover img {
+    opacity: 1;
+}
+#r_btn {
+    width: 90px;
+    height: 100%;
+    position: absolute;
+    right: 0;
     z-index: 999;
 }
 #r_btn {
-    width: 50px;
-    height: 130px;
-    background: url(../img/main/w_slide_next.png) no-repeat center / cover;
+    width: 90px;
+    height: 100%;
+    /* background: url(../img/main/w_slide_prev.png) no-repeat center / cover; */
     position: absolute;
-    top: 20vw;
+    /* top: 20vw; */
     right: 0;
     z-index: 999;
+}
+#r_btn > img {
+    position: absolute;
+    right: 11px;
+    top: 34vh;
+    opacity: 0;
+}
+/* #l_btn > img:hover {
+    opacity: 1;
+} */
+#r_btn:hover {
+    background-color: rgba(219, 218, 218, 0.719);
+    transition: all 0.4s
+}
+#r_btn:hover img {
+    opacity: 1;
 }
 .indicator {
     height: 50px;
@@ -247,11 +287,11 @@
         padding: 0 10px;
         box-sizing: border-box;
     }
-    #l_btn {
-        top: 17vw;
+    #l_btn > img {
+        top: 19vh;
     }
-    #r_btn {
-        top: 17vw;
+    #r_btn > img {
+        top: 19vh;
     }
     .toolbar {
         height: 4vh;
@@ -268,13 +308,11 @@
     .toolbar {
         display: none;
     }
-    #r_btn {
-        top: 16vw;
-        height: 70px;
+    #l_btn > img {
+        top: 13vh;
     }
-    #l_btn {
-        top: 16vw;
-        height: 70px;
+    #r_btn > img {
+        top: 13vh;
     }
     .indicator {
         height: 45px;
@@ -304,9 +342,23 @@
         width: calc((100% - (30px * 1)) / 2);
         margin: 20px 0;
     }
-
+    #l_btn {
+        width: 60px;
+    }
+    #r_btn {
+        width: 60px;
+    }
+    #l_btn > img {
+        top: 6vh;
+        left: 0;
+    }
+    #r_btn > img {
+        top: 6vh;
+        right: 0;
+    }
     .indicator {
-        height: 35px;
+        height: 28px;
+        gap: 30px;
     }
     .indi_bar {
         width: 15px;
@@ -321,5 +373,15 @@
     .sec_title {
         margin-bottom: 35px;
         font-size: 27px;
+    }
+    .indicator {
+        height: 25px;
+        gap: 20px;
+    }
+    #l_btn > img {
+        top: 3vh;
+    }
+    #r_btn > img {
+        top: 3vh;
     }
 }
