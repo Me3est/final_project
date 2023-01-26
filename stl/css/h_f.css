@@ -53,6 +53,10 @@
     height: 26px;
     background: url(../img/main/logo_2020.png) no-repeat center / contain;
     display: none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    trnasform:translate(-50%, -50%);
 }
 /* login */
 .h_personal1 {
