@@ -57,7 +57,7 @@
     position:absolute;
     top:50%;
     left:50%;
-    trnasform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
 }
 /* login */
 .h_personal1 {
@@ -340,7 +340,7 @@
     width: 35px;
     height: 30px;
     position: absolute;
-    top: 63px;
+    top: 0px;
     left: 1%;
 }
 .ham_box1 span {
@@ -355,7 +355,7 @@
     width: 35px;
     height: 30px;
     position: absolute;
-    top: 20px;
+    top: 21px;
     left: 1%;
 }
 .ham_box2 span {
