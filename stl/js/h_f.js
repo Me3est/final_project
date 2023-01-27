@@ -1,8 +1,5 @@
 $(window).ready(function() {
-    // $(document).on('.h_search', 'click', function() {
-    //     $('.layer').addClass('block')
-    // })
-    $(document).on( 'click','#h_search ', function() {
+    $('.h_search').click(function() {
         $('#layer').css({display:'block'})
     })
     $(document).on( 'click','#x_box', function() {

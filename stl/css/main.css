@@ -13,9 +13,10 @@
 .toolbar {
     width: 100%;
     max-width:1200px;
-    height: 6vh;
-    background: url(../img/main/top_bar.jpg) no-repeat center / cover;
     margin-bottom: 15px;
+}
+.toolbar img { 
+    width: 100%;
 }
 /* 배너 */
 .main_banner {

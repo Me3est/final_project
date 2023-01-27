@@ -27,6 +27,7 @@
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
+    position:relative;
     justify-content: space-between
 }
 .h_cate {
@@ -53,6 +54,10 @@
     height: 26px;
     background: url(../img/main/logo_2020.png) no-repeat center / contain;
     display: none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
 }
 /* login */
 .h_personal1 {
@@ -67,7 +72,7 @@
     background: url(../img/main/user.png) no-repeat center / cover;
     position: relative;
 }
-#h_search {
+.h_search {
     width: 25px;
     height: 25px;
     background: url(../img/icon/search.png) no-repeat center / cover;
@@ -335,7 +340,7 @@
     width: 35px;
     height: 30px;
     position: absolute;
-    top: 63px;
+    top: 0px;
     left: 1%;
 }
 .ham_box1 span {
@@ -350,7 +355,7 @@
     width: 35px;
     height: 30px;
     position: absolute;
-    top: 20px;
+    top: 21px;
     left: 1%;
 }
 .ham_box2 span {
